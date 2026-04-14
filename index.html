@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Asymptotic Graph Visualizer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📊 Asymptotic Graph Visualizer</h1>
+  <p class="subtitle">Visualize Time Complexity (Big-O Notations)</p>
+
+  <div class="controls">
+    <select id="func">
+      <option value="n">O(n)</option>
+      <option value="n2">O(n²)</option>
+      <option value="logn">O(log n)</option>
+    </select>
+
+    <button onclick="plotGraph()">Plot Graph</button>
+  </div>
+
+  <div class="card">
+    <canvas id="graph" width="700" height="400"></canvas>
+  </div>
+
+  <div class="info">
+    <h3>📘 About</h3>
+    <p>This tool helps visualize how algorithms grow with input size.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
